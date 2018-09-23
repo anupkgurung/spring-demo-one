@@ -12,8 +12,14 @@
     class="com.custom.demospring.TrackCoach">
     
     </bean>
+    
+    <bean id="myFortune" 
+    class="com.custom.demospring.HappyFortuneService"></bean>
+    
     <bean id="myExercise" 
-    class="com.custom.demospring.SportExercise"></bean>
+    class="com.custom.demospring.SportExercise">
+    <constructor-arg ref="myFortune" />
+    </bean>
 </beans>
 
 

@@ -15,8 +15,8 @@ public class HelloSpring {
 		Coach coach = context.getBean("myCoach", Coach.class);
 		Coach coach2 = context2.getBean("myExercise",Coach.class);
 		//call methds
-		System.out.println(coach.getDailyWorkout());
-		System.out.println(coach2.getDailyWorkout());
+		//System.out.println(coach.getDailyWorkout());
+		System.out.println(coach2.getFortuneService());
 		//close contxt
 		context.close();
 		context2.close();
