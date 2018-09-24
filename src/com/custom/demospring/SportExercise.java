@@ -13,7 +13,13 @@ public class SportExercise implements Coach{
 		return "this is excercise for basket ball";
 	}
 	
-	public String getFortuneService() {
+	public String getService() {
 		return "i ma from sport service";//theFortuneService.getFortuneService();
+	}
+
+	@Override
+	public String getFortuneService() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }
